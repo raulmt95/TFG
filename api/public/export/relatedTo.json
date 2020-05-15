@@ -1,0 +1,282 @@
+{
+  "extra": {
+    "stats": {
+      "writesExecuted": 0,
+      "writesIgnored": 0,
+      "scannedFull": 23,
+      "scannedIndex": 0,
+      "filtered": 0,
+      "httpRequests": 0,
+      "executionTime": 0.0002498626708984375,
+      "peakMemoryUsage": 36101
+    },
+    "warnings": []
+  },
+  "_connection": {
+    "config": {
+      "url": "http://127.0.0.1:8529",
+      "databaseName": "ProyectoDB",
+      "arangoVersion": 30000,
+      "retryConnection": false,
+      "agentOptions": {
+        "maxSockets": 3,
+        "keepAlive": true,
+        "keepAliveMsecs": 1000
+      },
+      "headers": {
+        "x-arango-version": 30000,
+        "authorization": "Basic cmVndWxhcjpyZWd1bGFy"
+      }
+    },
+    "arangoMajor": 3,
+    "_baseUrl": {
+      "protocol": "http:",
+      "slashes": true,
+      "host": "127.0.0.1:8529",
+      "port": "8529",
+      "hostname": "127.0.0.1",
+      "hash": null,
+      "search": null,
+      "query": null,
+      "pathname": "/",
+      "path": "/",
+      "href": "http://127.0.0.1:8529/"
+    },
+    "_databasePath": "/_db/ProyectoDB",
+    "retryOptions": {
+      "forever": false,
+      "retries": 0,
+      "minTimeout": 5000,
+      "randomize": true
+    }
+  },
+  "_api": {
+    "_connection": {
+      "config": {
+        "url": "http://127.0.0.1:8529",
+        "databaseName": "ProyectoDB",
+        "arangoVersion": 30000,
+        "retryConnection": false,
+        "agentOptions": {
+          "maxSockets": 3,
+          "keepAlive": true,
+          "keepAliveMsecs": 1000
+        },
+        "headers": {
+          "x-arango-version": 30000,
+          "authorization": "Basic cmVndWxhcjpyZWd1bGFy"
+        }
+      },
+      "arangoMajor": 3,
+      "_baseUrl": {
+        "protocol": "http:",
+        "slashes": true,
+        "host": "127.0.0.1:8529",
+        "port": "8529",
+        "hostname": "127.0.0.1",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/",
+        "path": "/",
+        "href": "http://127.0.0.1:8529/"
+      },
+      "_databasePath": "/_db/ProyectoDB",
+      "retryOptions": {
+        "forever": false,
+        "retries": 0,
+        "minTimeout": 5000,
+        "randomize": true
+      }
+    },
+    "_path": "/_api"
+  },
+  "_result": [
+    {
+      "_key": "973340",
+      "_id": "relatedTo/973340",
+      "_from": "files/584027",
+      "_to": "people/835065",
+      "_rev": "_aYPXZR6---",
+      "label": "relatedTo"
+    },
+    {
+      "_key": "973342",
+      "_id": "relatedTo/973342",
+      "_from": "files/584027",
+      "_to": "people/835159",
+      "_rev": "_aYPXbq6---",
+      "label": "relatedTo"
+    },
+    {
+      "_key": "973650",
+      "_id": "relatedTo/973650",
+      "_from": "files/969000",
+      "_to": "people/835159",
+      "_rev": "_aYPb0ba---",
+      "label": "relatedTo"
+    },
+    {
+      "_key": "978484",
+      "_id": "relatedTo/978484",
+      "_from": "files/973799",
+      "_to": "people/835159",
+      "_rev": "_aYQpYQm---",
+      "label": "relatedTo"
+    },
+    {
+      "_key": "1119656",
+      "_id": "relatedTo/1119656",
+      "_from": "files/976416",
+      "_to": "people/1061777",
+      "_rev": "_aZBXpim---",
+      "label": "relatedTo"
+    },
+    {
+      "_key": "1119658",
+      "_id": "relatedTo/1119658",
+      "_from": "files/976416",
+      "_to": "people/1058514",
+      "_rev": "_aZBXryW---",
+      "label": "relatedTo"
+    },
+    {
+      "_key": "1119660",
+      "_id": "relatedTo/1119660",
+      "_from": "files/976416",
+      "_to": "people/835065",
+      "_rev": "_aZBXwAS---",
+      "label": "relatedTo"
+    },
+    {
+      "_key": "1119754",
+      "_id": "relatedTo/1119754",
+      "_from": "files/584151",
+      "_to": "people/1061777",
+      "_rev": "_aZBY976---",
+      "label": "relatedTo"
+    },
+    {
+      "_key": "1119756",
+      "_id": "relatedTo/1119756",
+      "_from": "files/584151",
+      "_to": "people/1058514",
+      "_rev": "_aZBZAPO---",
+      "label": "relatedTo"
+    },
+    {
+      "_key": "1138412",
+      "_id": "relatedTo/1138412",
+      "_from": "files/976416",
+      "_to": "people/1058831",
+      "_rev": "_aZDJjzS---",
+      "label": "relatedTo"
+    },
+    {
+      "_key": "1138414",
+      "_id": "relatedTo/1138414",
+      "_from": "files/976416",
+      "_to": "people/835159",
+      "_rev": "_aZDJmJ6---",
+      "label": "relatedTo"
+    },
+    {
+      "_key": "1138421",
+      "_id": "relatedTo/1138421",
+      "_from": "files/584027",
+      "_to": "people/1059246",
+      "_rev": "_aZDJz4W---",
+      "label": "relatedTo"
+    },
+    {
+      "_key": "1138428",
+      "_id": "relatedTo/1138428",
+      "_from": "files/584027",
+      "_to": "people/1066267",
+      "_rev": "_aZDJ2x6---",
+      "label": "relatedTo"
+    },
+    {
+      "_key": "1138430",
+      "_id": "relatedTo/1138430",
+      "_from": "files/584027",
+      "_to": "people/1058831",
+      "_rev": "_aZDJ7Re---",
+      "label": "relatedTo"
+    },
+    {
+      "_key": "1138432",
+      "_id": "relatedTo/1138432",
+      "_from": "files/584027",
+      "_to": "people/1061777",
+      "_rev": "_aZDJ97----",
+      "label": "relatedTo"
+    },
+    {
+      "_key": "1138439",
+      "_id": "relatedTo/1138439",
+      "_from": "files/584027",
+      "_to": "people/996996",
+      "_rev": "_aZDKBQe---",
+      "label": "relatedTo"
+    },
+    {
+      "_key": "1138441",
+      "_id": "relatedTo/1138441",
+      "_from": "files/584027",
+      "_to": "people/1058514",
+      "_rev": "_aZDKEGG---",
+      "label": "relatedTo"
+    },
+    {
+      "_key": "1138443",
+      "_id": "relatedTo/1138443",
+      "_from": "files/584027",
+      "_to": "people/835053",
+      "_rev": "_aZDKICO---",
+      "label": "relatedTo"
+    },
+    {
+      "_key": "1138450",
+      "_id": "relatedTo/1138450",
+      "_from": "files/584027",
+      "_to": "people/1104961",
+      "_rev": "_aZDKMvK---",
+      "label": "relatedTo"
+    },
+    {
+      "_key": "1138452",
+      "_id": "relatedTo/1138452",
+      "_from": "files/584027",
+      "_to": "people/1129502",
+      "_rev": "_aZDKQbu---",
+      "label": "relatedTo"
+    },
+    {
+      "_key": "1138459",
+      "_id": "relatedTo/1138459",
+      "_from": "files/584027",
+      "_to": "people/1116218",
+      "_rev": "_aZDKZC----",
+      "label": "relatedTo"
+    },
+    {
+      "_key": "1269521",
+      "_id": "relatedTo/1269521",
+      "_from": "files/1240114",
+      "_to": "people/835053",
+      "_rev": "_aZoIKsC---",
+      "label": "relatedTo"
+    },
+    {
+      "_key": "1269528",
+      "_id": "relatedTo/1269528",
+      "_from": "files/1240114",
+      "_to": "people/835065",
+      "_rev": "_aZoIQk----",
+      "label": "relatedTo"
+    }
+  ],
+  "_hasMore": false,
+  "count": 23
+}

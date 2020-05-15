@@ -1,0 +1,138 @@
+{
+  "extra": {
+    "stats": {
+      "writesExecuted": 0,
+      "writesIgnored": 0,
+      "scannedFull": 4,
+      "scannedIndex": 0,
+      "filtered": 0,
+      "httpRequests": 0,
+      "executionTime": 0.00024890899658203125,
+      "peakMemoryUsage": 34845
+    },
+    "warnings": []
+  },
+  "_connection": {
+    "config": {
+      "url": "http://127.0.0.1:8529",
+      "databaseName": "ProyectoDB",
+      "arangoVersion": 30000,
+      "retryConnection": false,
+      "agentOptions": {
+        "maxSockets": 3,
+        "keepAlive": true,
+        "keepAliveMsecs": 1000
+      },
+      "headers": {
+        "x-arango-version": 30000,
+        "authorization": "Basic cmVndWxhcjpyZWd1bGFy"
+      }
+    },
+    "arangoMajor": 3,
+    "_baseUrl": {
+      "protocol": "http:",
+      "slashes": true,
+      "host": "127.0.0.1:8529",
+      "port": "8529",
+      "hostname": "127.0.0.1",
+      "hash": null,
+      "search": null,
+      "query": null,
+      "pathname": "/",
+      "path": "/",
+      "href": "http://127.0.0.1:8529/"
+    },
+    "_databasePath": "/_db/ProyectoDB",
+    "retryOptions": {
+      "forever": false,
+      "retries": 0,
+      "minTimeout": 5000,
+      "randomize": true
+    }
+  },
+  "_api": {
+    "_connection": {
+      "config": {
+        "url": "http://127.0.0.1:8529",
+        "databaseName": "ProyectoDB",
+        "arangoVersion": 30000,
+        "retryConnection": false,
+        "agentOptions": {
+          "maxSockets": 3,
+          "keepAlive": true,
+          "keepAliveMsecs": 1000
+        },
+        "headers": {
+          "x-arango-version": 30000,
+          "authorization": "Basic cmVndWxhcjpyZWd1bGFy"
+        }
+      },
+      "arangoMajor": 3,
+      "_baseUrl": {
+        "protocol": "http:",
+        "slashes": true,
+        "host": "127.0.0.1:8529",
+        "port": "8529",
+        "hostname": "127.0.0.1",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/",
+        "path": "/",
+        "href": "http://127.0.0.1:8529/"
+      },
+      "_databasePath": "/_db/ProyectoDB",
+      "retryOptions": {
+        "forever": false,
+        "retries": 0,
+        "minTimeout": 5000,
+        "randomize": true
+      }
+    },
+    "_path": "/_api"
+  },
+  "_result": [
+    {
+      "_key": "949647",
+      "_id": "users/949647",
+      "_rev": "_aYY8TmW--_",
+      "email": "raul@correo.com",
+      "role": "regular",
+      "password": "$2a$10$Sm.llyPaC.n2VVi8ilCrAeBE.BDan7VedYPmiXLkjETY0uq/7dVJy",
+      "loginString": "",
+      "visible": true
+    },
+    {
+      "_key": "1328667",
+      "_id": "users/1328667",
+      "_rev": "_aZ4MZE2--_",
+      "email": "raul@gmail.com",
+      "role": "regular",
+      "password": "$2a$10$Hc7yeVGopN80cvUQgc4CAOV4yqU6knmGfcbpwwEdpgQ/QRwa/fbcW",
+      "loginString": "",
+      "visible": true
+    },
+    {
+      "_key": "944073",
+      "_id": "users/944073",
+      "_rev": "_aZ4OeCu--_",
+      "email": "raul@prueba.com",
+      "role": "regular",
+      "password": "$2a$10$XtT9Wzz5258WVKJPLKVY0ute05xUqMGylrlj4fFxjlurqnL4HJK46",
+      "loginString": "",
+      "visible": true
+    },
+    {
+      "_key": "973674",
+      "_id": "users/973674",
+      "_rev": "_aZ4Oli---_",
+      "email": "raul@admin.com",
+      "role": "admin",
+      "password": "$2a$10$xvL9DNum5rOMfUg1ZyrxQelOjNkso.rjdRVU7yGtsgEo2JR6E1LqO",
+      "loginString": "$2a$10$XQivcAe49Dqt8E38b52L2uLOgYtFosgBEE3cAKTnNvzIUNnjrUx5a",
+      "visible": true
+    }
+  ],
+  "_hasMore": false,
+  "count": 4
+}

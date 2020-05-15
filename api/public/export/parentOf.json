@@ -1,0 +1,370 @@
+{
+  "extra": {
+    "stats": {
+      "writesExecuted": 0,
+      "writesIgnored": 0,
+      "scannedFull": 34,
+      "scannedIndex": 0,
+      "filtered": 0,
+      "httpRequests": 0,
+      "executionTime": 0.0002970695495605469,
+      "peakMemoryUsage": 37088
+    },
+    "warnings": []
+  },
+  "_connection": {
+    "config": {
+      "url": "http://127.0.0.1:8529",
+      "databaseName": "ProyectoDB",
+      "arangoVersion": 30000,
+      "retryConnection": false,
+      "agentOptions": {
+        "maxSockets": 3,
+        "keepAlive": true,
+        "keepAliveMsecs": 1000
+      },
+      "headers": {
+        "x-arango-version": 30000,
+        "authorization": "Basic cmVndWxhcjpyZWd1bGFy"
+      }
+    },
+    "arangoMajor": 3,
+    "_baseUrl": {
+      "protocol": "http:",
+      "slashes": true,
+      "host": "127.0.0.1:8529",
+      "port": "8529",
+      "hostname": "127.0.0.1",
+      "hash": null,
+      "search": null,
+      "query": null,
+      "pathname": "/",
+      "path": "/",
+      "href": "http://127.0.0.1:8529/"
+    },
+    "_databasePath": "/_db/ProyectoDB",
+    "retryOptions": {
+      "forever": false,
+      "retries": 0,
+      "minTimeout": 5000,
+      "randomize": true
+    }
+  },
+  "_api": {
+    "_connection": {
+      "config": {
+        "url": "http://127.0.0.1:8529",
+        "databaseName": "ProyectoDB",
+        "arangoVersion": 30000,
+        "retryConnection": false,
+        "agentOptions": {
+          "maxSockets": 3,
+          "keepAlive": true,
+          "keepAliveMsecs": 1000
+        },
+        "headers": {
+          "x-arango-version": 30000,
+          "authorization": "Basic cmVndWxhcjpyZWd1bGFy"
+        }
+      },
+      "arangoMajor": 3,
+      "_baseUrl": {
+        "protocol": "http:",
+        "slashes": true,
+        "host": "127.0.0.1:8529",
+        "port": "8529",
+        "hostname": "127.0.0.1",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/",
+        "path": "/",
+        "href": "http://127.0.0.1:8529/"
+      },
+      "_databasePath": "/_db/ProyectoDB",
+      "retryOptions": {
+        "forever": false,
+        "retries": 0,
+        "minTimeout": 5000,
+        "randomize": true
+      }
+    },
+    "_path": "/_api"
+  },
+  "_result": [
+    {
+      "_key": "836748",
+      "_id": "parentOf/836748",
+      "_from": "people/835159",
+      "_to": "people/835065",
+      "_rev": "_aXWNLQi---",
+      "label": "parentOf"
+    },
+    {
+      "_key": "836776",
+      "_id": "parentOf/836776",
+      "_from": "people/835159",
+      "_to": "people/835053",
+      "_rev": "_aXWNTQS---",
+      "label": "parentOf"
+    },
+    {
+      "_key": "997019",
+      "_id": "parentOf/997019",
+      "_from": "people/996996",
+      "_to": "people/835065",
+      "_rev": "_aYY65au---",
+      "label": "parentOf"
+    },
+    {
+      "_key": "997046",
+      "_id": "parentOf/997046",
+      "_from": "people/996996",
+      "_to": "people/835053",
+      "_rev": "_aYY69ei---",
+      "label": "parentOf"
+    },
+    {
+      "_key": "1058546",
+      "_id": "parentOf/1058546",
+      "_from": "people/1058514",
+      "_to": "people/996996",
+      "_rev": "_aYxO6mK---",
+      "label": "parentOf"
+    },
+    {
+      "_key": "1058873",
+      "_id": "parentOf/1058873",
+      "_from": "people/1058831",
+      "_to": "people/996996",
+      "_rev": "_aYxRtqi---",
+      "label": "parentOf"
+    },
+    {
+      "_key": "1059288",
+      "_id": "parentOf/1059288",
+      "_from": "people/1058514",
+      "_to": "people/1059246",
+      "_rev": "_aYxVBr2---",
+      "label": "parentOf"
+    },
+    {
+      "_key": "1059325",
+      "_id": "parentOf/1059325",
+      "_from": "people/1058831",
+      "_to": "people/1059246",
+      "_rev": "_aYxVFze---",
+      "label": "parentOf"
+    },
+    {
+      "_key": "1061819",
+      "_id": "parentOf/1061819",
+      "_from": "people/1061777",
+      "_to": "people/835159",
+      "_rev": "_aYxyh26---",
+      "label": "parentOf"
+    },
+    {
+      "_key": "1066310",
+      "_id": "parentOf/1066310",
+      "_from": "people/1058514",
+      "_to": "people/1066267",
+      "_rev": "_aYy5o_i---",
+      "label": "parentOf"
+    },
+    {
+      "_key": "1066357",
+      "_id": "parentOf/1066357",
+      "_from": "people/1058831",
+      "_to": "people/1066267",
+      "_rev": "_aYy5qpm---",
+      "label": "parentOf"
+    },
+    {
+      "_key": "1167750",
+      "_id": "parentOf/1167750",
+      "_from": "people/1061777",
+      "_to": "people/1167693",
+      "_rev": "_aZNm7v2---",
+      "label": "parentOf"
+    },
+    {
+      "_key": "1167884",
+      "_id": "parentOf/1167884",
+      "_from": "people/1061777",
+      "_to": "people/1167822",
+      "_rev": "_aZNnZOq---",
+      "label": "parentOf"
+    },
+    {
+      "_key": "1170021",
+      "_id": "parentOf/1170021",
+      "_from": "people/1169299",
+      "_to": "people/1169939",
+      "_rev": "_aZNuhwW---",
+      "label": "parentOf"
+    },
+    {
+      "_key": "1170249",
+      "_id": "parentOf/1170249",
+      "_from": "people/1066267",
+      "_to": "people/1169939",
+      "_rev": "_aZNu15C---",
+      "label": "parentOf"
+    },
+    {
+      "_key": "1170449",
+      "_id": "parentOf/1170449",
+      "_from": "people/1169299",
+      "_to": "people/1170357",
+      "_rev": "_aZNvSAK---",
+      "label": "parentOf"
+    },
+    {
+      "_key": "1170592",
+      "_id": "parentOf/1170592",
+      "_from": "people/1066267",
+      "_to": "people/1170357",
+      "_rev": "_aZNvY1O---",
+      "label": "parentOf"
+    },
+    {
+      "_key": "1170828",
+      "_id": "parentOf/1170828",
+      "_from": "people/1167967",
+      "_to": "people/1170721",
+      "_rev": "_aZNwlem---",
+      "label": "parentOf"
+    },
+    {
+      "_key": "1170974",
+      "_id": "parentOf/1170974",
+      "_from": "people/1167693",
+      "_to": "people/1170721",
+      "_rev": "_aZNwpny---",
+      "label": "parentOf"
+    },
+    {
+      "_key": "1171211",
+      "_id": "parentOf/1171211",
+      "_from": "people/1167693",
+      "_to": "people/1171123",
+      "_rev": "_aZNyBJe---",
+      "label": "parentOf"
+    },
+    {
+      "_key": "1171370",
+      "_id": "parentOf/1171370",
+      "_from": "people/1167967",
+      "_to": "people/1171123",
+      "_rev": "_aZNyF6m---",
+      "label": "parentOf"
+    },
+    {
+      "_key": "1171598",
+      "_id": "parentOf/1171598",
+      "_from": "people/1167693",
+      "_to": "people/1171491",
+      "_rev": "_aZNydf2---",
+      "label": "parentOf"
+    },
+    {
+      "_key": "1171765",
+      "_id": "parentOf/1171765",
+      "_from": "people/1167967",
+      "_to": "people/1171491",
+      "_rev": "_aZNyj2W---",
+      "label": "parentOf"
+    },
+    {
+      "_key": "1172304",
+      "_id": "parentOf/1172304",
+      "_from": "people/1169122",
+      "_to": "people/1169502",
+      "_rev": "_aZN2n-O---",
+      "label": "parentOf"
+    },
+    {
+      "_key": "1175767",
+      "_id": "parentOf/1175767",
+      "_from": "people/1175655",
+      "_to": "people/1058831",
+      "_rev": "_aZOZIPq---",
+      "label": "parentOf"
+    },
+    {
+      "_key": "1176288",
+      "_id": "parentOf/1176288",
+      "_from": "people/1175966",
+      "_to": "people/1058831",
+      "_rev": "_aZObdeC---",
+      "label": "parentOf"
+    },
+    {
+      "_key": "1178873",
+      "_id": "parentOf/1178873",
+      "_from": "people/1059246",
+      "_to": "people/1169502",
+      "_rev": "_aZOpxUi---",
+      "label": "parentOf"
+    },
+    {
+      "_key": "1180153",
+      "_id": "parentOf/1180153",
+      "_from": "people/1179182",
+      "_to": "people/1179454",
+      "_rev": "_aZOtgym---",
+      "label": "parentOf"
+    },
+    {
+      "_key": "1180536",
+      "_id": "parentOf/1180536",
+      "_from": "people/1180404",
+      "_to": "people/1175966",
+      "_rev": "_aZOvZYW---",
+      "label": "parentOf"
+    },
+    {
+      "_key": "1180842",
+      "_id": "parentOf/1180842",
+      "_from": "people/1180705",
+      "_to": "people/1058514",
+      "_rev": "_aZOv6Wy---",
+      "label": "parentOf"
+    },
+    {
+      "_key": "1181226",
+      "_id": "parentOf/1181226",
+      "_from": "people/1180705",
+      "_to": "people/1181025",
+      "_rev": "_aZOxElu---",
+      "label": "parentOf"
+    },
+    {
+      "_key": "1182251",
+      "_id": "parentOf/1182251",
+      "_from": "people/835065",
+      "_to": "people/1182109",
+      "_rev": "_aZO250C---",
+      "label": "parentOf"
+    },
+    {
+      "_key": "1270938",
+      "_id": "parentOf/1270938",
+      "_from": "people/1270752",
+      "_to": "people/1180404",
+      "_rev": "_aZoP2bW---",
+      "label": "parentOf"
+    },
+    {
+      "_key": "1289959",
+      "_id": "parentOf/1289959",
+      "_from": "people/1059246",
+      "_to": "people/1179454",
+      "_rev": "_aZrqMse---",
+      "label": "parentOf"
+    }
+  ],
+  "_hasMore": false,
+  "count": 34
+}

@@ -1,0 +1,268 @@
+{
+  "extra": {
+    "stats": {
+      "writesExecuted": 0,
+      "writesIgnored": 0,
+      "scannedFull": 17,
+      "scannedIndex": 0,
+      "filtered": 0,
+      "httpRequests": 0,
+      "executionTime": 0.00037384033203125,
+      "peakMemoryUsage": 36374
+    },
+    "warnings": []
+  },
+  "_connection": {
+    "config": {
+      "url": "http://127.0.0.1:8529",
+      "databaseName": "ProyectoDB",
+      "arangoVersion": 30000,
+      "retryConnection": false,
+      "agentOptions": {
+        "maxSockets": 3,
+        "keepAlive": true,
+        "keepAliveMsecs": 1000
+      },
+      "headers": {
+        "x-arango-version": 30000,
+        "authorization": "Basic cmVndWxhcjpyZWd1bGFy"
+      }
+    },
+    "arangoMajor": 3,
+    "_baseUrl": {
+      "protocol": "http:",
+      "slashes": true,
+      "host": "127.0.0.1:8529",
+      "port": "8529",
+      "hostname": "127.0.0.1",
+      "hash": null,
+      "search": null,
+      "query": null,
+      "pathname": "/",
+      "path": "/",
+      "href": "http://127.0.0.1:8529/"
+    },
+    "_databasePath": "/_db/ProyectoDB",
+    "retryOptions": {
+      "forever": false,
+      "retries": 0,
+      "minTimeout": 5000,
+      "randomize": true
+    }
+  },
+  "_api": {
+    "_connection": {
+      "config": {
+        "url": "http://127.0.0.1:8529",
+        "databaseName": "ProyectoDB",
+        "arangoVersion": 30000,
+        "retryConnection": false,
+        "agentOptions": {
+          "maxSockets": 3,
+          "keepAlive": true,
+          "keepAliveMsecs": 1000
+        },
+        "headers": {
+          "x-arango-version": 30000,
+          "authorization": "Basic cmVndWxhcjpyZWd1bGFy"
+        }
+      },
+      "arangoMajor": 3,
+      "_baseUrl": {
+        "protocol": "http:",
+        "slashes": true,
+        "host": "127.0.0.1:8529",
+        "port": "8529",
+        "hostname": "127.0.0.1",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/",
+        "path": "/",
+        "href": "http://127.0.0.1:8529/"
+      },
+      "_databasePath": "/_db/ProyectoDB",
+      "retryOptions": {
+        "forever": false,
+        "retries": 0,
+        "minTimeout": 5000,
+        "randomize": true
+      }
+    },
+    "_path": "/_api"
+  },
+  "_result": [
+    {
+      "_key": "1197722",
+      "_id": "queryList/1197722",
+      "_rev": "_aZRZdMe---",
+      "type": "findRelation",
+      "firstParameter": "835053",
+      "secondParameter": "835065",
+      "userID": "973674",
+      "date": 1589299141131
+    },
+    {
+      "_key": "1197760",
+      "_id": "queryList/1197760",
+      "_rev": "_aZRaKYy---",
+      "type": "findByRelationType",
+      "firstParameter": "parent",
+      "secondParameter": "835053",
+      "userID": "973674",
+      "date": 1589299187408
+    },
+    {
+      "_key": "1197790",
+      "_id": "queryList/1197790",
+      "_rev": "_aZRaOki---",
+      "type": "findByName",
+      "firstParameter": "ra",
+      "secondParameter": "",
+      "userID": "973674",
+      "date": 1589299191693
+    },
+    {
+      "_key": "1198159",
+      "_id": "queryList/1198159",
+      "_rev": "_aZRhAWa---",
+      "type": "findByRelationType",
+      "firstParameter": "grandparent",
+      "secondParameter": "835053",
+      "userID": "944073",
+      "date": 1589299635896
+    },
+    {
+      "_key": "1225469",
+      "_id": "queryList/1225469",
+      "_rev": "_aZZyYvG---",
+      "type": "findRelation",
+      "firstParameter": "1175966",
+      "secondParameter": "1180705",
+      "userID": "973674",
+      "date": 1589369861316
+    },
+    {
+      "_key": "1226549",
+      "_id": "queryList/1226549",
+      "_rev": "_aZZ1Fgm---",
+      "type": "findByName",
+      "firstParameter": "jose",
+      "secondParameter": "",
+      "userID": "973674",
+      "date": 1589370038239
+    },
+    {
+      "_key": "1227282",
+      "_id": "queryList/1227282",
+      "_rev": "_aZZ5qMC---",
+      "type": "findByRelationType",
+      "firstParameter": "cousin",
+      "secondParameter": "835053",
+      "userID": "973674",
+      "date": 1589370337954
+    },
+    {
+      "_key": "1227347",
+      "_id": "queryList/1227347",
+      "_rev": "_aZZ6toW---",
+      "type": "findByName",
+      "firstParameter": "tamayo",
+      "secondParameter": "",
+      "userID": "973674",
+      "date": 1589370407017
+    },
+    {
+      "_key": "1227934",
+      "_id": "queryList/1227934",
+      "_rev": "_aZZ8_RS---",
+      "type": "findByName",
+      "firstParameter": "a",
+      "secondParameter": "",
+      "userID": "973674",
+      "date": 1589370490617
+    },
+    {
+      "_key": "1228936",
+      "_id": "queryList/1228936",
+      "_rev": "_aZa_GHi---",
+      "type": "findByRelationType",
+      "firstParameter": "nephew",
+      "secondParameter": "835159",
+      "userID": "973674",
+      "date": 1589370694243
+    },
+    {
+      "_key": "1228977",
+      "_id": "queryList/1228977",
+      "_rev": "_aZa_Y5G---",
+      "type": "findByRelationType",
+      "firstParameter": "ancestor",
+      "secondParameter": "1182109",
+      "userID": "973674",
+      "date": 1589370713470
+    },
+    {
+      "_key": "1275231",
+      "_id": "queryList/1275231",
+      "_rev": "_aZpkb5u---",
+      "type": "findRelation",
+      "firstParameter": "835053",
+      "secondParameter": "835065",
+      "userID": "973674",
+      "date": 1589459556073
+    },
+    {
+      "_key": "1289656",
+      "_id": "queryList/1289656",
+      "_rev": "_aZrp29S---",
+      "type": "findByRelationType",
+      "firstParameter": "siblings",
+      "secondParameter": "835053",
+      "userID": "973674",
+      "date": 1589470001866
+    },
+    {
+      "_key": "1328897",
+      "_id": "queryList/1328897",
+      "_rev": "_aZ4BlBi---",
+      "type": "findByRelationType",
+      "firstParameter": "cousin",
+      "secondParameter": "835053",
+      "userID": "1328667",
+      "date": 1589540764664
+    },
+    {
+      "_key": "1329002",
+      "_id": "queryList/1329002",
+      "_rev": "_aZ4DDnO---",
+      "type": "findByRelationType",
+      "firstParameter": "nephew",
+      "secondParameter": "835159",
+      "userID": "1328667",
+      "date": 1589540861525
+    },
+    {
+      "_key": "1329043",
+      "_id": "queryList/1329043",
+      "_rev": "_aZ4DTw6---",
+      "type": "findByRelationType",
+      "firstParameter": "uncle",
+      "secondParameter": "835053",
+      "userID": "1328667",
+      "date": 1589540878066
+    },
+    {
+      "_key": "1329239",
+      "_id": "queryList/1329239",
+      "_rev": "_aZ4IYZu---",
+      "type": "findByName",
+      "firstParameter": "tamayo",
+      "secondParameter": "",
+      "userID": "1328667",
+      "date": 1589541210524
+    }
+  ],
+  "_hasMore": false,
+  "count": 17
+}
