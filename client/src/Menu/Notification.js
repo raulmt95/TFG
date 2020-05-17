@@ -105,6 +105,10 @@ export default function CustomizedSnackbars(props) {
       message = "Ha ocurrido un error exportando los datos";
   } else if (type === "exportFilesFailure"){
       message = "Ha ocurrido en un error exportando los archivos";
+  } else if (type === "initializeSuccess"){
+      message = "Base de datos inicializada con éxito";
+  } else if (type === "initializeFailure"){
+      message = "Ha ocurrido en un error inicializando la base de datos";
   }
 
   return (

@@ -2,15 +2,34 @@ Database = require('arangojs').Database;
 db = new Database('http://127.0.0.1:8529');
 db.useBasicAuth("root", "");
 
-// Código para crear una nueva base de datos
-// db.createDatabase('ProyectoDB').then(
-//     () => console.log('Database created'),
-//     err => console.error('Failed to create database:', err)
-// );
-
-db.useDatabase("ProyectoDB");
+const databaseName = "ProyectoDB";
 
 module.exports = {
+    createDatabase : async function(){
+        db.useBasicAuth("root", "");
+        db.useDatabase("_system");
+
+        const names = await db.listDatabases();
+
+        if (names.includes(databaseName)){
+            try {
+                db.useDatabase(databaseName);
+                console.log("Usando base de datos: " + databaseName);
+                return "databaseExists";
+            } catch (err) {
+                console.log("Error conectando a la base de datos: " + err);
+            }
+        } else {
+            try {
+                await db.createDatabase(databaseName);
+                db.useDatabase(databaseName);
+                console.log("Base de datos creada: " + databaseName);
+            } catch (err){
+                console.log("Error creando base de datos: " + err);
+            }
+        }
+    },
+
     createCollections : async function(){
         const peopleCollection = db.collection('people');
         await peopleCollection.create();

@@ -2,8 +2,6 @@ Database = require('arangojs').Database;
 db = new Database('http://127.0.0.1:8529');
 db.useBasicAuth("regular", "regular");
 
-db.useDatabase("ProyectoDB");
-
 module.exports = {
     getFileData : async function(){
         const cursor = await db.query('FOR x IN files FILTER x.visible == true SORT x.date DESC RETURN x');

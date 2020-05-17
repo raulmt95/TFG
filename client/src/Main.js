@@ -32,6 +32,17 @@ class Main extends Component {
     }
 
     /**
+     * Método para conectar con la base de datos cuando se monta el componente
+     * En caso de no existir, se inicializa una nueva base de datos
+     */
+    componentDidMount = () => {
+        fetch(`${serverName}/configAPI/initialize`)
+          .then(response => response.text())
+          .then(response => this.showNotification("initializeSuccess"))
+          .catch(err => this.showNotification("initializeFailure"));
+    }
+
+    /**
      * Método de inicio de sesión.
      * Llama a los métodos de obtención de datos de personas, archivos y usuarios necesarios para el
      * funcionamiento del programa y los almacena en el estado. Almacena también el usuario actual
@@ -229,17 +240,22 @@ class Main extends Component {
     personListAdd = (newPerson) => {
         let auxPersonList = [...this.state.personList];
 
-        for (let i=0; i < auxPersonList.length; i++){
-            console.log(auxPersonList[i]);
-            if (auxPersonList[i].getBirthdate() > newPerson.getBirthdate()){
-                auxPersonList.splice(i, 0, newPerson);
-                break;
-            }
-            if (i === auxPersonList.length - 1){
-                auxPersonList.push(newPerson);
-                break;
+        if (auxPersonList.length === 0){    // Es la primera persona que se añade
+            auxPersonList.push(newPerson);
+        } else {
+            for (let i=0; i < auxPersonList.length; i++){
+                console.log(auxPersonList[i]);
+                if (auxPersonList[i].getBirthdate() > newPerson.getBirthdate()){
+                    auxPersonList.splice(i, 0, newPerson);
+                    break;
+                }
+                if (i === auxPersonList.length - 1){
+                    auxPersonList.push(newPerson);
+                    break;
+                }
             }
         }
+        
         this.setState({personList: [...auxPersonList]});
     }
 
