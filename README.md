@@ -102,6 +102,24 @@ Se puede acceder a la interfaz de usuario de ArangoDB a través de la dirección
 Para terminar, refrescaremos la ventana del navegador en la que se encuentra la aplicación para que vuelva a conectar con el servidor.
 Si se ha inicializado correctamente, veremos un mensaje de éxito en la parte inferior de la pantalla.
 
+### Sobre la exportación e importación
+Esta aplicación dispone de funcionalidad para exportar e importar la información almacenada. Esta se divide en dos partes: exportación e importación de datos y de archivos.
+
+Para la **exportación de datos**, usamos la herramienta **arangodump** de ArangoDB desde la terminal:
+```
+arangodump --server.database "ProyectoDB" --output-directory "dump"
+```
+Esto creará una carpeta llamada *dump* en el directorio actual con toda la información almacenada en la base de datos *ProyectoDB*
+
+Para la **importación de datos**, usamos la herramienta **arangorestore** de la siguiente forma:
+```
+arangorestore --server.database "ProyectoDB" --input-directory "dump"
+```
+Esto tomará la información del directorio *dump* y la introducirá en la base de datos de nombre *ProyectoDB*
+
+La **exportación e importación de archivos** la haremos a través de la propia aplicación. En el menú de administrador, encontraremos los botones correspondientes en la parte superior de la pantalla. La exportación comenzará una descarga de una carpeta comprimida en formato .zip con los archivos almacenados en el servidor. La importación requerirá una carpeta comprimida con este mismo formato.
+
 ### Notas
 - La aplicación contiene por defecto un usuario administrador, cuyo email es **admin@admin.com** y su contraseña es **adminPassword**
 - En caso de ocurrir un error, se mostrará por pantalla, ya que se trata de un entorno de desarrollo. Estos mensajes no bloquean el funcionamiento de la aplicación, y se pueden cerrar haciendo click en la cruz que aparecerá en la parte superior derecha.
+- No se debe confundir la importación de archivos con la subida de archivos. Para que los archivos importados puedan visualizarse, su información debe encontrarse ya almacenada en la base de datos.
