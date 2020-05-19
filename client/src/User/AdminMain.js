@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import UserObject from "./UserObject";
 import UserItem from "./UserItem";
 import HeaderActions from "../Menu/HeaderActions";
+import PopupImportFiles from "./PopupImportFiles";
 
 
 class AdminMain extends Component {
@@ -12,6 +13,7 @@ class AdminMain extends Component {
             userList: props.userList,
             currentUser: props.currentUser,
             selectedUser: null,
+            popupImport: false,
         }
     }
 
@@ -28,11 +30,11 @@ class AdminMain extends Component {
     /**
      * Método para exportar la información de la base de datos en formato JSON
      */
-    exportData = () => {
-        fetch(`${this.props.serverName}/configAPI/exportData`, {method: 'POST'})
-          .then(response => window.open(`${this.props.serverName}/export/export.zip`))
-          .catch(err => this.props.showNotification("exportDataFailure"));
-    }
+    // exportData = () => {
+    //     fetch(`${this.props.serverName}/configAPI/exportData`, {method: 'POST'})
+    //       .then(response => window.open(`${this.props.serverName}/export/export.zip`))
+    //       .catch(err => this.props.showNotification("exportDataFailure"));
+    // }
 
     /**
      * Método para exportar los archivos almacenados en el servidor
@@ -41,6 +43,25 @@ class AdminMain extends Component {
         fetch(`${this.props.serverName}/configAPI/exportFiles`, {method: 'POST'})
           .then(response => window.open(`${this.props.serverName}/files/files.zip`))
           .catch(err => this.props.showNotification("exportFilesFailure"));
+    }
+
+    /**
+     * 
+     */
+    importFiles = (file) => {
+        const fd = new FormData();
+
+        fd.append('file', file);
+
+        var options = {
+            method: 'POST',
+            body: fd,
+        }
+
+        fetch(`${this.props.serverName}/configAPI/importFiles`, options)
+            // .then(response => response.json())
+            .then(response => this.props.showNotification("importFilesSuccess"))
+            .catch(err => this.props.showNotification("importFilesFailure"));
     }
 
     /**
@@ -89,6 +110,32 @@ class AdminMain extends Component {
         }
     }
 
+    /**
+     * Método para abrir un popup
+     * @param {String} type Tipo del popup que se quiere abrir
+     */
+    openPopup = (type) => {
+        switch (type){
+            case "importFiles":
+                this.setState({popupImportFiles: true});
+                break;
+            default:
+        }
+    }
+
+    /**
+     * Método para cerrar un popup
+     * @param {String} type Tipo del popup que se quiere cerrar
+     */
+    closePopup = (type) => {
+        switch (type){
+            case "importFiles":
+                this.setState({popupImportFiles: false});
+                break;
+            default:
+        }
+    }
+
 
     render() {
         return (
@@ -101,6 +148,7 @@ class AdminMain extends Component {
                     handleSearchChange = {this.setSelectedUser}
                     exportData = {this.exportData}
                     exportFiles = {this.exportFiles}
+                    openPopup = {this.openPopup}
                 />
                 {this.state.userList.map( user => (
                     <UserItem 
@@ -110,6 +158,13 @@ class AdminMain extends Component {
                         setSelected = {this.setSelectedUser}
                     />
                 ))}
+                {this.state.popupImportFiles ? 
+                    <PopupImportFiles
+                        importFiles = {this.importFiles}
+                        closePopup = {this.closePopup}
+                    />
+                    : null
+                }
             </div>
         );
     }

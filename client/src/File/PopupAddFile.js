@@ -90,7 +90,6 @@ export default function PopupAddPerson(props) {
 
   const handleFileChange = (event) => {
     let file = event.target.files[0];
-    console.log(file);
     if (file.type.includes("image") ||
         file.type === "application/pdf" ||
         file.type === "video/mp4"){

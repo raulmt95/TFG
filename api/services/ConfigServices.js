@@ -81,26 +81,26 @@ module.exports = {
         `);
     },
 
-    exportData : async function(){
-        const fs = require('fs');
-        const collections = await db.listCollections();
+    // exportData : async function(){
+    //     const fs = require('fs');
+    //     const collections = await db.listCollections();
 
-        collections.forEach(collection => {
-            db.collection(collection.name).all().then(function (docs) {
-                let filename = collection.name + ".json";
-                return new Promise(function (resolve, reject) {
-                  fs.writeFile(`./public/export/${filename}`, JSON.stringify(docs, null, 2), function (err) {
-                    if (err) reject(err);
-                    else resolve();
-                  });
-              })
-              .then(function () {
-                console.log('All done!');
-              })
-              .catch(function (err) {
-                console.error('Something wrong', err);
-              });
-            });
-        });
-    }
+    //     collections.forEach(collection => {
+    //         db.collection(collection.name).all().then(function (docs) {
+    //             let filename = collection.name + ".json";
+    //             return new Promise(function (resolve, reject) {
+    //               fs.writeFile(`./public/export/${filename}`, JSON.stringify(docs, null, 2), function (err) {
+    //                 if (err) reject(err);
+    //                 else resolve();
+    //               });
+    //           })
+    //           .then(function () {
+    //             console.log('All done!');
+    //           })
+    //           .catch(function (err) {
+    //             console.error('Something wrong', err);
+    //           });
+    //         });
+    //     });
+    // }
 }

@@ -1,6 +1,5 @@
 Database = require('arangojs').Database;
 db = new Database('http://127.0.0.1:8529');
-db.useBasicAuth("regular", "regular");
 
 const bcrypt = require('bcryptjs');
 

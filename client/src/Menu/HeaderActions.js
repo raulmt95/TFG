@@ -101,15 +101,21 @@ export default function HeaderActions(props) {
             </Button>
             : null
         }
-        {props.menu === "admin" ?
+        {/* {props.menu === "admin" ?
             <Button className={classes.buttonSpecial} color="primary" value="exportData" onClick={onButtonClick}>
                 Exportar base de datos
             </Button>
             : null
-        }
+        } */}
         {props.menu === "admin" ?
             <Button className={classes.buttonSpecial} color="primary" value="exportFiles" onClick={onButtonClick}>
                 Exportar archivos
+            </Button>
+            : null
+        }
+        {props.menu === "admin" ?
+            <Button className={classes.buttonSpecial} color="primary" value="importFiles" onClick={onButtonClick}>
+                Importar archivos
             </Button>
             : null
         }

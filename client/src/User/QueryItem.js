@@ -18,8 +18,6 @@ export default function QueryItem(props) {
     props.executeQuery(props.query.getType(), props.query.getFirstParameter(), props.query.getSecondParameter());
   }
 
-  console.log(props.query);
-
   let firstParameter = "";
   let secondParameter = "";
 
