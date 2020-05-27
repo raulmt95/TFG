@@ -25,15 +25,15 @@ export default function UserItem(props) {
     props.setSelected(props.user);
   }
 
-  let selected_class = "";
+  let isSelected = "";
   if (props.selected){
-    selected_class = classes.selected;
+    isSelected = classes.selected;
   } else {
-    selected_class = "";
+    isSelected = "";
   }
 
   return (
-    <div className={`${classes.container} ${selected_class}`} onClick={handleClick}>
+    <div className={`${classes.container} ${isSelected}`} onClick={handleClick}>
       <Typography>{props.user.getEmail()}</Typography>
       <Typography>Tipo: {props.user.getRole()}</Typography>
     </div>

@@ -146,7 +146,7 @@ class AdminMain extends Component {
                     disabled = {this.state.selectedUser === null}
                     userList = {this.state.userList}
                     handleSearchChange = {this.setSelectedUser}
-                    exportData = {this.exportData}
+                    // exportData = {this.exportData}
                     exportFiles = {this.exportFiles}
                     openPopup = {this.openPopup}
                 />

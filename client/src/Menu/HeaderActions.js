@@ -37,8 +37,8 @@ export default function HeaderActions(props) {
   const onButtonClick = (event) => {
     if (event.currentTarget.value === "editAdmin"){
         props.changeAdminPrivileges();
-    } else if (event.currentTarget.value === "exportData"){
-        props.exportData();
+    // } else if (event.currentTarget.value === "exportData"){
+    //     props.exportData();
     } else if (event.currentTarget.value === "exportFiles"){
         props.exportFiles();
     } else {

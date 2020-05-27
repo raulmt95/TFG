@@ -244,7 +244,6 @@ class Main extends Component {
             auxPersonList.push(newPerson);
         } else {
             for (let i=0; i < auxPersonList.length; i++){
-                console.log(auxPersonList[i]);
                 if (auxPersonList[i].getBirthdate() > newPerson.getBirthdate()){
                     auxPersonList.splice(i, 0, newPerson);
                     break;
@@ -283,14 +282,10 @@ class Main extends Component {
         let auxPersonList = [...this.state.personList];
         auxPersonList.splice(index, 1);
 
-        console.log(person.getRelations());
-
         person.getRelations().forEach(function(relation){
             let relatedPerson = relation.getTo();
 
-            console.log(relatedPerson.getRelations());
             relatedPerson.setRelations(relatedPerson.getRelations().filter(r => r.getTo().getID() !== person.getID()));
-            console.log(relatedPerson.getRelations());
         });
 
         this.setState({personList: [...auxPersonList]});
@@ -434,7 +429,6 @@ class Main extends Component {
                         <HeaderNav 
                             menuChangedHandler = {this.menuChangedHandler}
                             selected = {this.state.selectedTab}
-                            personList = {this.state.personList}
                             handleLogOut = {this.handleLogOut}
                             currentUser = {this.state.currentUser}
                         />
@@ -512,7 +506,6 @@ class Main extends Component {
                     <Notification
                         type = {this.state.notificationType}
                         closeNotification = {this.closeNotification}
-                        checkPassword = {this.checkPassword}
                     />
                     : null
                 }

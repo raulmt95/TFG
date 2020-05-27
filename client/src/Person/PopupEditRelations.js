@@ -99,7 +99,6 @@ export default function PopupEditRelations(props) {
                 error = {relationError}
                 handleSelectChange = {handleSelectChange}
                 person = {props.selectedPerson}
-                partnerDisabled = {props.selectedPerson.getRelations().find(relation => relation.getType() === "partnerOf")}
             />
             <div className={classes.search}>
               <SearchBox

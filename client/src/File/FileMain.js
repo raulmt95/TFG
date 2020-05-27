@@ -22,8 +22,6 @@ class FileMain extends Component {
             popupDelete: false,
             popupView: false,
             forceUpdate: false,
-            notificationType: "",
-            notificationOpen: false,
             currentUser: props.currentUser,
         }
     }
@@ -373,13 +371,6 @@ class FileMain extends Component {
                         forceUpdate = {this.forceUpdate}
                         currentUser = {this.state.currentUser}
                         serverName = {this.props.serverName}
-                    />
-                    : null
-                }
-                {this.state.notificationOpen ?
-                    <Notification
-                        type = {this.state.notificationType}
-                        closeNotification = {this.closeNotification}
                     />
                     : null
                 }

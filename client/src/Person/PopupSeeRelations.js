@@ -297,7 +297,6 @@ export default function PopupEditRelations(props) {
     if (name === ""){
         setEmptyNameError(true);
     } else {
-        console.log(!isRepeated);
         if (!isRepeated){
             props.addToQueryList("findByName", name, "");
         }

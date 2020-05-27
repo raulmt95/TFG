@@ -72,7 +72,7 @@ export default function SelectRelation(props) {
           [
             <MenuItem value={"parentOf"}>{parentOfText}</MenuItem>,
             <MenuItem value={"childOf"}>{childOfText}</MenuItem>,
-            <MenuItem disabled={props.partnerDisabled} value={"partnerOf"}>Pareja</MenuItem>,
+            <MenuItem value={"partnerOf"}>Pareja</MenuItem>,
           ]
           }
         </Select>
