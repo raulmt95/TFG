@@ -7,7 +7,6 @@ import AlertDialog from "../Menu/AlertDialog";
 import PopupViewFile from "./PopupViewFile";
 import { Typography } from "@material-ui/core";
 import HeaderActions from "../Menu/HeaderActions"
-import Notification from "../Menu/Notification";
 
 class FileMain extends Component {
     constructor(props){

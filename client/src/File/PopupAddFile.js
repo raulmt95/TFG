@@ -148,15 +148,16 @@ export default function PopupAddPerson(props) {
         } else {
           props.editFile(title, description);
         }
+        handleClose();
       } else {
         if (radioValue === "file" && selectedFile !== null){
           props.uploadFile(selectedFile, title, description);
+          handleClose();
         } else if (radioValue === "link" && link !== ""){
           props.uploadLink(link, title, description);
+          handleClose();
         }
       }
-
-      handleClose();
     }
   }
 

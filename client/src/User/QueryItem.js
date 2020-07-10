@@ -78,13 +78,13 @@ export default function QueryItem(props) {
 
   return (
     <div>
-      {props.query.getType() === "findRelation" ? 
+      {props.query.getType() === "findRelation" && firstParameter && secondParameter ? 
         <Typography gutterBottom onClick={handleClick} className={classes.query}>
             Relación entre {firstParameter.getFullName()} y {secondParameter.getFullName()}
         </Typography>
         : null
       }
-      {props.query.getType() === "findByRelationType" ? 
+      {props.query.getType() === "findByRelationType" && secondParameter ? 
         <Typography gutterBottom onClick={handleClick} className={classes.query}>
             {firstParameter} {secondParameter.getFullName()}
         </Typography>
